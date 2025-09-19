@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #eef0f2;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 12%;
+    background-color: #353b3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 10px 150px;
+    z-index: 999;
+}
+
+header div {
+    color: #eef0f2;
+    display: flex;
+    justify-content: center;
+}
+
+#WebImageLogo {
+    width: 50px;
+    margin: 15px 27px;
+}
+
+#WebLogo {
+    display: inline-block;
+    margin: 19px 0px;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+header li {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.6s ease;
+}
+
+header li {
+    transition: 0.6s ease;
+}
+
+header li:hover {
+    transform: scale(1.2);
+}
+
+header a:hover {
+    color: #eef0f2;
+}
+
+.space {
+    height: 80px;
+}
+
+/*  */
+.card img {
+    border-radius: 25%;
+    width: 30px;
+    height: 30px;
+    transition: 0.7s;
+}
+
+.card .insta:hover {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+}
+
+.card .facebook:hover {
+    background: #0866ff;
+}
+
+.card .linkedin:hover {
+    background: #0a66c2;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    position: relative;
+    background: #c6c7c4;
+    color: #252525;
+    border-radius: 40px;
+    overflow: hidden;
+    line-height: 150%;
+    box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.2);
+    transition: box-shadow .3s ease-in-out;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+/* Image */
+.card-img {
+
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: transform .3s ease-in-out;
+    z-index: 2;
+}
+
+/* Buttons */
+.social-media {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    transform: translateY(-5em);
+    z-index: 3;
+}
+
+.social-media li {
+    background: #c6c7c4;
+    display: inline-flex;
+    padding: 1px;
+    border-radius: 20%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+/* Icons */
+.social-media li a {
+
+    width: 30px;
+    height: 30px;
+    fill: #252525;
+}
+
+/* Texts */
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.subtitle {
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+
+/* Hovers */
+.card:hover {
+    box-shadow: 0px 15px 30px rgba(80, 80, 80, 0.3);
+}
+
+.card:hover .card-img {
+    transform: translateY(-5em);
+    background-image: url(Images/Mazen.jpg);
+    background-size: cover;
+}
+
+.card:hover .social-media li {
+    transform: translateY(-5%);
+    opacity: 1;
+}
+
+.card:hover .social-media li:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.card:hover .social-media li:nth-child(2) {
+    transition-delay: .1s;
+}
+
+.card:hover .social-media li:nth-child(3) {
+    transition-delay: .2s;
+}
+
+/*  */
+
+.Trainer {
+    display: flex;
+    margin: 30px 0px;
+}
+
+.TrainerName {
+    text-align: center;
+    margin-left: 10px;
+    width: 60%;
+}
+
+.Trainers {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+
+}
+
+.Trainer h2 {
+    color: #846a6a;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-decoration-line: underline;
+}
+
+.Trainer p {
+    font-weight: 900;
+    color: #353b3c;
+    font-size: 15px;
+    margin: auto;
+    width: 90%;
+
+}
+
+/* button */
+.cta {
+    border: none;
+    background: none;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*  */
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 40%;
+    margin-top: 14%;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: -10px;
+    width: 40px;
+    height: 50px;
+}
+
+#T1 {
+    background-image: url(../Images/33.jpg);
+}
+
+#T2 {
+    background-image: url(../Images/Mazen.jpg);
+}
+
+#T3 {
+    background-image: url(../Images/77.jpg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.AnimationSection {
+    display: flex;
+
+}
+
+.Animation {
+    width: 50%;
+    height: 500px;
+
+    /* animation-timing-function: linear;
+    animation-direction: normal;
+      animation-duration: 10s;
+      animation-name: Movements;
+      animation-iteration-count: infinite;
+      animation-play-state: running */
+}
+
+@keyframes Movements {
+    0% {
+        background-image: url(Images/Boxing\ Animation\ 1.jpg);
+    }
+
+    50% {
+        background-image: url(Images/Boxing\ Animation\ 2.jpg);
+    }
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #353b3c;
+    position: relative;
+    color: #bac1c7;
+    padding: 30px 0 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    display: inline-block;
+    list-style: none;
+}
+
+footer ul li a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #bac1c7;
+}
+
