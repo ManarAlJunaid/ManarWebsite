@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CssPage.css">
+    <title>Club</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'>
+
+
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="WebImageLogo" src="Images/logo.png" alt="ICON">
+            <span id="WebLogo">Home</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Math.html">Math</a></li>
+                <li><a href="Physics.html">Physics</a></li>
+                <li><a href="Koran.html">Koran</a></li>
+                <li><a href="WOWS.html">Photo</a></li>
+                <li><a href="Table.html">Table</a></li>
+                <li><a class="login" href="Login.html">Login</a></li>
+            </ul>
+
+           
+        </nav>
+    </header>
+
+    <section class="MainFrontPage">
+        <h1>Madrasaty</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. I
+            psam quos aut deleniti volu
+            ptatibus architecto animi quasi modi q
+            uaerat inventore sint!
+        </p>
+        <nav>
+            <a href="#"><img class="insta" src="Images/instagram.png" alt=""></a>
+            <a href="#"><img class="facebook" src="Images/facebook (1).png" alt=""></a>
+            <a href="#"><img class="linkedin" src="Images/linkedin.png" alt=""></a>
+        </nav>
+
+    </section>
+
+    <section class="ItemsTypesSec">
+        <p>المواد</p>
+        <section class="ItemsTypes">
+            <div>
+
+                <h1>Math</h1>
+                <img id="MathPic" src="Images/math1.jpg" alt="">
+
+            </div>
+            <div>
+                <h1>Physics</h1>
+                <img id="PhysicsPic" src="Images/Physics1.jpg" alt="">
+            </div>
+            <div>
+                <h1>Koran</h1>
+                <img id="KoranPic" src="Images/koran1.jpg" alt="">
+            </div>
+
+            <script>
+                onload = function () {
+                    var image1 = document.getElementById('MathPic');
+                    image1.addEventListener('mouseover', function () {
+                        image1.src = 'Images/math2.jpg'; // Change the image source on mouseover
+                        image1.style.transform = 260 + 'px';
+                    });
+
+                    image1.addEventListener('mouseout', function () {
+                        image1.src = 'Images/math1.jpg'; // Revert back to the original image source on mouseout
+                    });
+
+                    //-----------
+
+                    var image2 = document.getElementById('PhysicsPic');
+                    image2.addEventListener('mouseover', function () {
+                        image2.src = 'Images/Physics2.jpg'; // Change the image source on mouseover
+                        image2.style.transform = 260 + 'px';
+                    });
+
+                    image2.addEventListener('mouseout', function () {
+                        image2.src = 'Images/Physics1.jpg'; // Revert back to the original image source on mouseout
+                    });
+
+                    //-----------
+
+                    var image3 = document.getElementById('KoranPic');
+                    image3.addEventListener('mouseover', function () {
+                        image3.src = 'Images/koran2.jpg'; // Change the image source on mouseover
+                        image3.style.transform = 260 + 'px';
+                    });
+
+                    image3.addEventListener('mouseout', function () {
+                        image3.src = 'Images/koran1.jpg'; // Revert back to the original image source on mouseout
+                    });
+
+                }
+            </script>
+        </section>
+    </section>
+
+    <section class="Message">
+        <h2 >FEED BACK FORM</h2>    
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Country</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="country">    
+          <option value="none">Select Country</option>    
+          <option value="australia">Yemen</option>    
+          <option value="canada">Canada</option>    
+          <option value="usa">USA</option>    
+          <option value="russia">Russia</option>    
+          <option value="japan">Japan</option>    
+          <option value="india">India</option>    
+          <option value="china">China</option>    
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" minlength="10" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>    
+    </section>
+    <center>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary butLog" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="main">
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+            <div class="signup">
+                <form>
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="txt" placeholder="User name" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required="">
+                    <button onclick="GoBack()">Sign up</button>
+                </form>
+            </div>
+    
+            <div class="login">
+                <form>
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input type="email" name="email" placeholder="Email" required="">
+                    <input type="password" name="pswd" placeholder="Password" required="">
+                    <button onclick="GoBack()">Login</button>
+                </form>
+            </div>
+        </div>
+    
+        <script>
+            function GoBack()
+            {
+                history.back();
+            }
+        </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </center>
+    <footer>
+        <span>
+            <p> ©ManarAbd-Almaula</p>
+            <p> ©MazenAbd-Almaula</p>
+            <p> ©Abdulmawla-Ahmed</p>
+        </span>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube Channel</a></li>
+        </ul>
+        <ul>
+            <li>Contact us in:</li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

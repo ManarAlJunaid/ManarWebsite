@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login page</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/font-awesome.css">
+</head>
+
+
+<body>
+    
+   <form action="#" method="POST" onsubmit="return CheckPassword"  >
+    <h2>MyLogo</h2>
+ 
+    <h1><span>W</span>elcome <span>B</span>ack</h1>
+   <p>Lorem ipsum dolor sit amet</p>
+
+   <label for="email">ADDRESS</label>
+    <input id="email" type="text" placeholder="Em Address.." name="Em_Address" required >
+    <br>
+   
+     <label for="password">PASSWORD</label>
+    <input type="password" id="password" placeholder="Password" name="pass" required >
+    <p>I've forgate <span>p</span>assword</p>
+    <br>
+    <button type="submit" onclick="CheckPassword()"><a href="MainPage.html"> Sign in</a></button>
+    <br>
+   <a href="index.html">Go TO Home Page</a>
+
+       <p id="message"></p>
+     
+  <i class="fa-brands fa-youtube"></i>
+   </form>
+
+
+  <script>
+   function CheckPassword()
+   {
+    var password=document.getElementById("password").value;
+    var message=document.getElementById("message");
+    var correctpassword="1234";
+
+    if (email.length < 1)
+    {
+        return;
+    }
+
+
+    if (password.length<4)
+    {
+      
+      message.textContent="كلمة المرور يجب ان تكون 4 احرف على الاقل";
+      message.style.color="orange";
+      return;
+
+    }
+    /*&& email.length>1*/
+    if(password==correctpassword)
+    {
+        message.textContent="تم تسجيل الدخول بنجاح";
+        message.style.color="green";
+    
+        setTimeout(function()
+        {
+            window.location.href="MainPage.html";
+          
+        },1000);
+   }
+   else 
+    {      
+        message.textContent=" كلمة المرور غير صحيحة";
+        message.style.color="red";
+    }
+   }
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="WOWS.css">
+</head>
+<body>
+    <header>
+            <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Math.html">Math</a></li>
+                    <li><a href="Physics.html">Physics</a></li>
+                    <li><a href="Koran.html">Koran</a></li>
+                    <li><a href="wowslider.html">Photo</a></li>
+                    <li><a href="Table.html">Table</a></li>
+                    <li><a class="login" href="Login.html">Login</a></li>
+                </ul>
+    </header>
+    
+    <div>
+
+
+        
+    </div>
+</body>
+</html>
